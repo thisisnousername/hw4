@@ -14,7 +14,7 @@ Generate a static array of *N* random numbers. Fill in the numbers within an ext
 
 ### Part 2
 
-Assume we have discrete signal values *f[i],i=0,...,N-1* but unfortunately the signal is very noisy. We come up with the idea of how we might reduce the noise: We calculate g[i] = (f[i-1] + f[i] + f[i-1])/3 and thus replace every value by a local average.
+Assume we have discrete signal values *f[i],i=0,...,N-1* but unfortunately the signal is very noisy. We come up with the idea of how we might reduce the noise: We calculate g[i] = (f[i-1] + f[i] + f[i+1])/3 and thus replace every value by a local average.
 
 In the file **noisy.dat** there is such a signal. You can plot it in gnuplot to see it. You will write a code that filters this signal. Files **to be submitted are the code** for the program **and one plot** which shows your filtered result versus the original unfiltered signal.
 
